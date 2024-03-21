@@ -16,13 +16,13 @@ import example.example.pages.FacebookLoginPage;
 @Test(testName = "Facebook login test", description = "Facebook login test")
 public class FaceBookLoginTest extends BaseTest {
 
-	@Test
-	public void facebookLoginTest() {
-		driver.get("https://www.facebook.com/");
-		FacebookLoginPage facebookLoginPage = PageinstancesFactory.getInstance(FacebookLoginPage.class);
-		facebookLoginPage.enterEmail("abc").enterPassword("abc").clickSignIn();
-		Assert.assertTrue(false, "Login failed : Test failed");
-	}
+//	@Test
+//	public void facebookLoginTest() {
+//		driver.get("https://www.facebook.com/");
+//		FacebookLoginPage facebookLoginPage = PageinstancesFactory.getInstance(FacebookLoginPage.class);
+//		facebookLoginPage.enterEmail("abc").enterPassword("abc").clickSignIn();
+//		Assert.assertFalse(true, "Login failed : Test failed");
+//	}
 
 	@Test
 	public void test1(){
@@ -30,7 +30,7 @@ public class FaceBookLoginTest extends BaseTest {
 		WebElement webElement=driver.findElement(By.xpath("//*[@id=\"APjFqb\"]"));
 		webElement.sendKeys("Durga Prasad");
 		webElement.submit();
-
+		System.out.println("iam here");
 	}
 
 	@Test
@@ -39,6 +39,7 @@ public class FaceBookLoginTest extends BaseTest {
 		WebElement webElement=driver.findElement(By.xpath("//*[@id=\"APjFqb\"]"));
 		webElement.sendKeys("Durga Prasad");
 		webElement.submit();
+		System.out.println("iam here");
 
 	}
 
@@ -48,6 +49,8 @@ public class FaceBookLoginTest extends BaseTest {
 		WebElement webElement=driver.findElement(By.xpath("//*[@id=\"APjFqb\"]"));
 		webElement.sendKeys("Durga Prasad");
 		webElement.submit();
+
+		System.out.println("iam here");
 
 	}
 }

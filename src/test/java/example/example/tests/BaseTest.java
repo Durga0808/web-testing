@@ -44,20 +44,20 @@ public class BaseTest {
 	 *
 	 * @param context the context
 	 */
-	@AfterSuite(alwaysRun = true)
-	public void wrapAllUp(ITestContext context) {
-		int total = context.getAllTestMethods().length;
-		int passed = context.getPassedTests().size();
-		int failed = context.getFailedTests().size();
-		int skipped = context.getSkippedTests().size();
-		LoggerUtil.log("Total number of testcases : " + total);
-		LoggerUtil.log("Number of testcases Passed : " + passed);
-		LoggerUtil.log("Number of testcases Failed : " + failed);
-		LoggerUtil.log("Number of testcases Skipped  : " + skipped);
-		//boolean mailSent = MailUtil.sendMail(total, passed, failed, skipped);
-		//LoggerUtil.log("Mail sent : " + mailSent);
-		LoggerUtil.log("************************** Test Execution Finished ************************************");
-	}
+//	@AfterSuite(alwaysRun = true)
+//	public void wrapAllUp(ITestContext context) {
+//		int total = context.getAllTestMethods().length;
+//		int passed = context.getPassedTests().size();
+//		int failed = context.getFailedTests().size();
+//		int skipped = context.getSkippedTests().size();
+//		LoggerUtil.log("Total number of testcases : " + total);
+//		LoggerUtil.log("Number of testcases Passed : " + passed);
+//		LoggerUtil.log("Number of testcases Failed : " + failed);
+//		LoggerUtil.log("Number of testcases Skipped  : " + skipped);
+//		//boolean mailSent = MailUtil.sendMail(total, passed, failed, skipped);
+//		//LoggerUtil.log("Mail sent : " + mailSent);
+//		LoggerUtil.log("************************** Test Execution Finished ************************************");
+//	}
 
 	/**
 	 * Setup.
