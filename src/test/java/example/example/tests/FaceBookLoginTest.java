@@ -32,4 +32,13 @@ public class FaceBookLoginTest extends BaseTest {
 		webElement.submit();
 
 	}
+
+	@Test
+	public void test2(){
+		driver.get("https://www.google.com/");
+		WebElement webElement=driver.findElement(By.xpath("//*[@id=\"APjFqb\"]"));
+		webElement.sendKeys("Durga Prasad");
+		webElement.submit();
+
+	}
 }
